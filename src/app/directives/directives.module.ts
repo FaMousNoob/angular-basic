@@ -6,7 +6,12 @@ import { AttributesComponent } from './attributes/attributes.component';
 import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
-  declarations: [DirectivesComponent, StructuralComponent, AttributesComponent, HighlightDirective],
+  declarations: [
+    DirectivesComponent,
+    StructuralComponent,
+    AttributesComponent,
+    HighlightDirective,
+  ],
   imports: [CommonModule],
   exports: [DirectivesComponent],
 })

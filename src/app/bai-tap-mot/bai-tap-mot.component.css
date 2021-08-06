@@ -1,0 +1,33 @@
+header {
+  background: lightcoral;
+  color: white;
+  font-size: 2rem;
+  padding: 10px 0;
+}
+
+.main-settings {
+  color: black;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.main {
+  display: flex;
+}
+
+.myContent {
+  height: 500px;
+  width: 70%;
+  background: lightgreen;
+}
+
+.mySidebar {
+  height: 500px;
+  width: 30%;
+  background: lightseagreen;
+}
+
+footer {
+  padding: 10px 0;
+  background: pink;
+}

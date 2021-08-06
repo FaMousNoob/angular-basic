@@ -1,0 +1,22 @@
+<h1>data-binding works!</h1>
+<div class="card text-left">
+  <img class="card-img-top" src="holder.js/100px180/" alt="" />
+  <div class="card-body">
+    <h4 class="card-title">{{ name }}</h4>
+    <p class="card-text">{{ description }}</p>
+    <img src="{{ imgUrl }}" alt="" />
+    <p class="alert alert-info">like: {{ like }}</p>
+    <button class="btn btn-info" (click)="handleLike('chức năng tăng like')">
+      like
+    </button>
+  </div>
+</div>
+
+<section>
+  <div class="form-group">
+    <label class="text-danger font-weight-bold"> Message </label>
+    <!-- <input type="text" class="form-control" (input)="handleChange($event)" /> -->
+    <input type="text" class="form-control" [(ngModel)]="message" />
+    <p class="alert alert-danger mt-2">{{ message }}</p>
+  </div>
+</section>

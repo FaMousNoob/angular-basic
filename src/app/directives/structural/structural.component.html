@@ -1,8 +1,25 @@
 <!-- if ngIf= true => title is showed, otherwise not show -->
-
 <section>
   <h1>*ngIf</h1>
-  <div *ngIf="isShow">show</div>
+  <div *ngIf="isShow; else replaceText">show</div>
+
+  <ng-template #replaceText class="d-block">nội dung thay thế</ng-template>
   <!-- <div *ngIf="!isShow">hide</div> -->
   <button class="btn btn-success" (click)="switching()">switch</button>
+
+  <div [ngSwitch]="month">
+    <p *ngSwitchCase="1">tháng {{ month }}</p>
+    <p *ngSwitchCase="2">tháng {{ month }}</p>
+    <p *ngSwitchCase="3">tháng {{ month }}</p>
+    <p *ngSwitchCase="4">tháng {{ month }}</p>
+    <button class="btn btn-primary" (click)="changeMonth()">đổi tháng</button>
+  </div>
+
+  <div [ngSwitch]="trueColor">
+    <h1 class="{{ trueColor }}">màu</h1>
+    <button (click)="handleColor('red')" class="btn btn-danger">đỏ</button>
+    <button (click)="handleColor('blue')" class="btn btn-primary">xanh</button>
+    <button (click)="handleColor('green')" class="btn btn-success">lục</button>
+  </div>
 </section>
+<hr />

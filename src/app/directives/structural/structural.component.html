@@ -1,12 +1,15 @@
 <!-- if ngIf= true => title is showed, otherwise not show -->
 <section>
-  <h1>*ngIf</h1>
+  <h2>*ngIf</h2>
   <div *ngIf="isShow; else replaceText">show</div>
 
   <ng-template #replaceText class="d-block">nội dung thay thế</ng-template>
   <!-- <div *ngIf="!isShow">hide</div> -->
   <button class="btn btn-success" (click)="switching()">switch</button>
+</section>
 
+<section>
+  <h2>ngSwitch</h2>
   <div [ngSwitch]="month">
     <p *ngSwitchCase="1">tháng {{ month }}</p>
     <p *ngSwitchCase="2">tháng {{ month }}</p>
@@ -20,6 +23,20 @@
     <button (click)="handleColor('red')" class="btn btn-danger">đỏ</button>
     <button (click)="handleColor('blue')" class="btn btn-primary">xanh</button>
     <button (click)="handleColor('green')" class="btn btn-success">lục</button>
+  </div>
+</section>
+
+<section>
+  <h2>*ngFor</h2>
+  <div class="row">
+    <div *ngFor="let meme of memerList" class="col-sm-3">
+      <div class="card text-left">
+        <img src="{{ meme.img }}" alt="" class="card-img-top" />
+        <div class="card-body">
+          <h4 class="card-title">{{ meme.name }}</h4>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 <hr />

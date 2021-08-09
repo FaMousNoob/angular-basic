@@ -1,0 +1,17 @@
+<section class="text-center">
+  <h1>COMMUNICATE COMPONENTS</h1>
+  <h2>Input</h2>
+  <app-parent></app-parent>
+  <app-parent></app-parent>
+
+  <input
+    type="text"
+    name="search"
+    id="search"
+    placeholder="Search"
+    #inputSearch
+  />
+  <button (click)="showViewChild()" class="btn btn-info">
+    show view child
+  </button>
+</section>

@@ -8,6 +8,7 @@ import { DataBindingModule } from './data-binding/data-binding.module';
 import { BaiTapMotModule } from './bai-tap-mot/bai-tap-mot.module';
 import { FirstComponentComponent } from './first-component/first-component.component';
 import { DirectivesModule } from './directives/directives.module';
+import { CommunicateModule } from './communicate/communicate.module';
 
 @NgModule({
   declarations: [AppComponent, FirstComponentComponent],
@@ -18,6 +19,7 @@ import { DirectivesModule } from './directives/directives.module';
     BaiTapMotModule,
     DataBindingModule,
     DirectivesModule,
+    CommunicateModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

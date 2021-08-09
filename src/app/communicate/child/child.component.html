@@ -1,0 +1,11 @@
+<div *ngIf="user">
+  <h4>Child</h4>
+  <p>outPut từ child: {{ user.className }}</p>
+  <p>ngày sinh: {{ user.age }}</p>
+  <div>
+    <input type="number" #inputAge />
+    <button class="btn btn-success" (click)="handleSetAge(inputAge.value)">
+      update age
+    </button>
+  </div>
+</div>

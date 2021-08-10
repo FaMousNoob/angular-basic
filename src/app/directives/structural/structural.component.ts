@@ -11,14 +11,11 @@ export class StructuralComponent implements OnInit {
   replaceText: string = 'this is a replace text';
 
   month: number = 1;
-  trueColor: string = 'bg-danger';
-
-  colors: string[] = ['bg-danger', 'bg-primary', 'bg-success'];
 
   memerList: any[] = [
     {
       name: 'heheboi',
-      img: 'https://www.meme-arsenal.com/memes/2c6b06c061099f97f281c8b8d097c26f.jpg',
+      img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG4a38vEA_E1gpCvjYUWpMgEvrJ7pcU5xzaJzDORSgvNqvB9nBQzCd6o1XnsY2oPN4874&usqp=CAU',
     },
     {
       name: 'white guy',
@@ -42,19 +39,6 @@ export class StructuralComponent implements OnInit {
       this.month += 1;
     } else {
       this.month = 1;
-    }
-  }
-
-  handleColor(color: string) {
-    switch (color) {
-      case 'red':
-        this.trueColor = this.colors[0];
-        break;
-      case 'blue':
-        this.trueColor = this.colors[1];
-        break;
-      case 'green':
-        this.trueColor = this.colors[2];
     }
   }
 

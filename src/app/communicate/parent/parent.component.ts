@@ -9,13 +9,14 @@ import { User } from 'src/app/core/interfaces/user.interface';
 export class ParentComponent implements OnInit {
   userInfo: User = {
     name: 'Ngô Bảo phương Tảo ',
-    className: 'bc01',
+    className: 'BOOTCAMP',
     age: 20,
     birthday: '2001/5/9',
   };
 
   handleSetAge(age: string) {
     this.userInfo.age = parseInt(age);
+    console.log(this.userInfo.age);
   }
 
   constructor() {}

@@ -1,6 +1,7 @@
 <div>
   <h3>parent</h3>
   <p>{{ userInfo.name }}</p>
+  <p>{{ userInfo.age }}</p>
   <app-child
     [user]="userInfo"
     (newSetAgeEvent)="handleSetAge($event)"
